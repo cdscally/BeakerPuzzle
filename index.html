@@ -1,0 +1,60 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+     Task - you have two beakers, one with 3 litre capacity and the other with 5 litre capacity. You must get exactly 4 litres of water in a beaker. You can take one of three actions:<br>
+     - Fill a beaker completely from a tap.<br>
+     - Empty a beaker completely.<br>
+     - Transfer water from one beaker to another. You must transfer all of the water from one beaker until either it is empty, or the other beaker is full.
+  <br>
+  <br>
+
+  Time Remaining -
+  <div id="timer">5:00</div>
+
+  <br>
+
+  <div>
+     Number of Moves - <span id="moves">0</span>
+     <br>
+     (You can solve it in 6 moves!)
+     <br>
+     <button type="button" id="reset">Reset</button>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+     Capacity - 3
+    <br>
+     Current Contents - <span id="beaker3Contents">0</span>
+    <br>
+     <img id="beakerSmall" src="./img/30.jpg">
+     <button type="button" id="fillBeaker3">Fill Beaker</button>
+     <button type="button" id="emptyBeaker3">Empty Beaker</button>
+     <button type="button" id="transferFromBeaker3">Transfer to Other Beaker</button>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    Capacity - 5
+    <br>
+    Current Contents - <span id="beaker5Contents">0</span>
+    <br>
+    <img id="beakerLarge" src="./img/50.jpg">
+    <button type="button" id="fillBeaker5">Fill Beaker</button>
+    <button type="button" id="emptyBeaker5">Empty Beaker</button>
+    <button type="button" id="transferFromBeaker5">Transfer to Other Beaker</button>
+  </div>
+
+  <script src='./src/beaker.js'></script>
+  <script src='./src/app.js'></script>
+  <script src='./src/timer.js'></script>
+  <script src='./src/transfer.js'></script>
+
+</body>
+</html>
